@@ -1,0 +1,37 @@
+.itemContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.item{
+    margin-left: 250px;
+    margin-top:  50px ;
+    display: flex;
+}
+
+.item_image{
+    max-width: 200px;
+    max-height:200px ;
+   
+}
+.item_image img {
+    border-radius: 10px;
+    transition: all 500ms ease;
+}
+
+.item_image img:hover {
+
+    scale: 150%;
+    transition: all 500ms ease;
+
+}
+.details{
+    padding: 10px;
+   
+}
+.cartBtn{
+    border: none;
+    border-radius: 8px;
+    background-color: crimson;
+    padding: 10px;
+}
