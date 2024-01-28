@@ -1,0 +1,47 @@
+
+.Nav{
+    display: flex;
+    background-color: rgb(112, 105, 97);
+    color:rgb(255, 255, 255);
+}
+.hSpan{
+    color: crimson;
+}
+.heading{
+    margin-top: 10px;
+    margin-left: 100px;
+
+}
+
+.navIcons{
+    margin-left: 500px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.navicon{
+    cursor: pointer;
+    background-color: rgba(122, 122, 122, 0.47);
+
+    color: rgb(254, 254, 254);
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    border-radius: 10px;
+}
+.navicon:hover{
+    color: rgb(250, 250, 250);
+    background-color:crimson;
+    transition: all 500ms ease;
+
+}
+
+.signout{
+    margin-left: 400px;
+    margin-top: 30px;
+    padding: 20px;
+    height: 50px;
+    cursor: pointer;
+ 
+}
