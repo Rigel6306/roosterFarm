@@ -6,16 +6,24 @@ import AddStaff from './components/delivery/AddStaff';
 import Order from './components/order/Order';
 import Farm from './components/productionStoc/Farm';
 import Outlet from './components/productionStoc/Outlet';
+import Home from './components/customer/Home';
+import Signup from'./components/customer/Signup';
+import About from './components/aboutAndContact/About';
+import Contact from './components/aboutAndContact/contact';
 function App() {
   return (
     <div className="App">
 
-        <Nav/>
+        {/* <Nav/> */}
         {/* <Login/> */}
         {/* <Farm/> */}
         {/* <Outlet/> */}
         {/* <AddStaff/> */}
-        <Order/>
+        {/* <Home/> */}
+        {/* <Signup/> */}
+        {/* <Order/> */}
+        {/* <About/> */}
+        <Contact/>
     </div>
   );
 }

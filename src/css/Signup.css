@@ -1,0 +1,42 @@
+.sign {
+    display: block;
+    margin-bottom: 8px;
+    justify-content: start;
+    }
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    }
+
+.signupComponent{
+    background-color: #f7f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+    margin-left: 150px;
+}
+.form{
+    display:flex;
+    justify-content: center;
+    
+}
+
+h5{
+    font-size: 18px;
+    font-weight: bold;
+    color: #7a0101;
+    display: flex;
+    align-content: center;
+    margin: 10px;
+    padding-left: 25px;
+    padding-bottom: 30px;
+}
+
+.delivery{
+    margin-left: 10px;
+}
+    
