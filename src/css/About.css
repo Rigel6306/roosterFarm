@@ -1,13 +1,12 @@
 .aboutComponent{
     background-color:rgb(217, 217, 217);
-    height:550px;
-    margin-top: 95px;
+    height:100vh;
 }
 
-h1{
+.hb1{
     color: rgb(122, 12, 12);
 }
-h6{
+.hb6{
     text-align: start;
 margin-left: 40px;
 }
@@ -15,8 +14,9 @@ margin-left: 40px;
     background-color: rgb(219, 205, 205);
     width: 1250px;
     margin-left: 25px;
+    padding: 20px;
 }
-p{
+.pb{
     text-align: start;
     margin-left: 20px;
     font-size:14px;

@@ -1,21 +1,29 @@
 .background{
     background-color: rgb(217, 217, 217);
-    height:550px;
-    margin-top: 95px;
+    height:100vh;
+    display:flex;
 }
 .homeComponent{
     background-color:rgb(216, 193, 193);
     width: 350px;
     height:350px;
+    border-radius: 20px;
     justify-content: center;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 200px;
+    padding-top: 40px;
+    padding-right: 10px;
 }
+
 
 .btn{
     display: flex;
     margin: 10px;
 }
-img{
+.imgh{
 height: 550px;
 width: auto;
-margin-left: 420px;
+margin-left: 438px;
+margin-top: 96px;
 }

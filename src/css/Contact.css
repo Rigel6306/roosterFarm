@@ -1,6 +1,6 @@
 .contactComponent{
     background-color:rgb(217, 217, 217);
-    height:98vh;
+    height:100vh;
     display:flex;
 }
 
@@ -17,7 +17,7 @@
     margin-top: 50px;
     
 }
-img{
+.imgc{
     height: 30px;
     width: 30px;
     margin: 0;
@@ -25,16 +25,19 @@ img{
 .address{
     display: flex;
     max-width: 500px;
+    margin-top: 8px;
     
 }
 .phone{
     display: flex;
     max-width: 500px;
+    margin-top: 10px;
     
 }
 .email{
     display: flex;
     max-width: 500px;
+    margin-top: 10px;
 }
 .contact{
 
@@ -66,9 +69,9 @@ img{
 .submit:hover{
     background-color: rgb(199, 78, 78);
 }
-input{
+.inpc{
     background-color: rgb(208, 214, 219);
 }
-p{
+.pc{
     color: aliceblue;
 }
