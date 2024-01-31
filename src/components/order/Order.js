@@ -20,18 +20,28 @@ const Order = () => {
         setStock([...stockData])
     }
 
-
     const addToCart = (itemCode, itemName, unitPrice) => {
 
-        let productList = []
-        let isAvaliable = false
-        const product = {
+        let product = {
             itemCode,
             itemName,
             unitPrice,
-            isAvailable:true
+            quantity:1
+  
         }
+        let isAvailable = false
+        
+        if(cartItems.length!==0){
+        cartItems.forEach((item)=>{
+            if(item.itemCode===product.itemCode){
+                    isAvailable=true
+            }
+        })
+    }
 
+        if(!isAvailable){
+        setCartItems((prev)=>{return[...prev,product]})
+        }
 
 
 
@@ -65,7 +75,7 @@ const Order = () => {
                         })
                     }
                 </div>
-                <Cart />
+                <Cart cartItems={cartItems} setCart= {setCartItems} />
             </div>
         </div>
     );
