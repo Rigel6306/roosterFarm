@@ -35,3 +35,63 @@
     background-color: crimson;
     padding: 10px;
 }
+
+.rpoductContainer{
+    display: grid;
+   grid-template-columns: auto 300px;
+}
+
+.cartContainer{
+    background-color: bisque;
+}
+
+.cartItemContainer{
+    padding: 10px;
+    background-color: blueviolet;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.cardescAndBtn{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(229, 220, 59);
+}
+
+.itemDescription{
+    text-transform: uppercase;
+    padding: 10px;
+   
+}
+
+.cartButons{
+    padding: 10px;
+
+    margin-left: 20px;
+ 
+}
+.quantityContainer{
+    padding: 10px;
+
+}
+.increse{
+    cursor: pointer;
+    font-weight: bolder;
+
+}
+.decrese{
+    cursor: pointer;
+    font-weight: bolder;
+}
+.removeBtn{
+    background-color: crimson;
+    border-radius: 10px;
+    max-width: 200px;
+    margin: 10px auto;
+    padding: 10px;
+    cursor: pointer;
+   
+}

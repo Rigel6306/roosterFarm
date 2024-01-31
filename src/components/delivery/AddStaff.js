@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../../css/delivery/delivery.css'
+import axios from 'axios';
 const AddStaff = () => {
  
     const [staffData,setStaffData] = useState({
@@ -15,7 +16,11 @@ const AddStaff = () => {
         console.log(staffData)
     }
     const handleSubmit = (e)=>{
-        
+        e.preventDefault();
+        axios.post('delivery/addstaff',staffData).then(()=>{
+            window.location.reload()
+        })
+       
     }
 
     return (
@@ -24,7 +29,7 @@ const AddStaff = () => {
                 <h1>Add New Delivery Staff Member</h1>
             </div>
             <div className="addStaffForm">
-                <form  >
+                <form >
                         <table className='addStafftable'>
                             <tbody>
                                 <tr>
@@ -45,7 +50,7 @@ const AddStaff = () => {
                                 </tr>
                             </tbody>
                         </table>
-                        <button className='staffSubmit' type='submit'> Submit</button>
+                        <button className='staffSubmit' type='submit'  onClick={handleSubmit} >Submit</button>
                 </form>
             </div>
         </div>
