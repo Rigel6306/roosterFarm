@@ -2,11 +2,17 @@ import { useEffect, useState } from "react";
 import axios from 'axios'
 import '../../css/order/order.css'
 import Cart from "./Cart";
+import { useCartContext, useCartContextUpdate } from './cartItemContext'
+
 
 const Order = () => {
     const [stock, setStock] = useState([]);
     const imagePath = '../../asstes/Cocktail.jpg'
-    const [cartItems, setCartItems] = useState([])
+
+
+    const cartContextItem = useCartContext();
+    const setCartContextItem = useCartContextUpdate();
+    console.log(cartContextItem)
     useEffect(() => {
         getStock();
     }, [])
@@ -26,21 +32,21 @@ const Order = () => {
             itemCode,
             itemName,
             unitPrice,
-            quantity:1
-  
+            quantity: 1
+
         }
         let isAvailable = false
-        
-        if(cartItems.length!==0){
-        cartItems.forEach((item)=>{
-            if(item.itemCode===product.itemCode){
-                    isAvailable=true
-            }
-        })
-    }
 
-        if(!isAvailable){
-        setCartItems((prev)=>{return[...prev,product]})
+        if (cartContextItem.length !== 0) {
+            cartContextItem.forEach((item) => {
+                if (item.itemCode === product.itemCode) {
+                    isAvailable = true
+                }
+            })
+        }
+
+        if (!isAvailable) {
+            setCartContextItem((prev) => { return [...prev, product] })
         }
 
 
@@ -75,7 +81,7 @@ const Order = () => {
                         })
                     }
                 </div>
-                <Cart cartItems={cartItems} setCart= {setCartItems} />
+                <Cart cartItems={cartContextItem} setCart={setCartContextItem} />
             </div>
         </div>
     );
