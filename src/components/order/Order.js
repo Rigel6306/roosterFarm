@@ -12,7 +12,7 @@ const Order = () => {
 
     const cartContextItem = useCartContext();
     const setCartContextItem = useCartContextUpdate();
-    console.log(cartContextItem)
+ 
     useEffect(() => {
         getStock();
     }, [])
@@ -49,7 +49,7 @@ const Order = () => {
             setCartContextItem((prev) => { return [...prev, product] })
         }
 
-
+        console.log(cartContextItem)
 
     }
 

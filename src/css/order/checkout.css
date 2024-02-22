@@ -1,0 +1,17 @@
+.checkoutContainer{
+    display: flex;
+}
+
+.chekoutForm{
+  max-width: 600px;
+  width: 600px;
+}
+
+.orderDetails{
+    max-width: 600px;
+    width: 600px;
+    background-color: rgb(177, 185, 182);
+}
+.itemContainer{
+  display: flex;
+}
